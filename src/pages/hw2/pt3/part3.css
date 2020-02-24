@@ -1,0 +1,15 @@
+body {
+	margin:50px 0px; padding:0px;
+	text-align:center;
+        background-color:#f5f5dc;
+	}
+	
+.body {
+	width:500px;
+	margin: 0px auto;
+	text-align:left;
+	padding:10px;
+	background-color: #dcd7d0;
+	}
+        
+.errorMsg { color: red; font-style: italic; }
