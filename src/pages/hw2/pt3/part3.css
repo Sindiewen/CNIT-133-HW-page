@@ -13,3 +13,24 @@ body {
 	}
         
 .errorMsg { color: red; font-style: italic; }
+
+.blank_row
+{
+    height: 10px !important; /* overwrites any other rules */
+    background-color: #f5f5dc;
+}
+
+.buttonLeft
+{
+	float: left;
+}
+
+.numberAmmountRt-Just
+{
+	text-align: right;
+}
+
+h3
+{
+	font-size: 1em;
+}
