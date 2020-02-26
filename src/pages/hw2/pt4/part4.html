@@ -21,7 +21,6 @@
 
         <!-- Getting stylesheet -->
         <link rel="stylesheet" href="part4.css">
-        <script src="part4.js"></script>
 
 
         <!-- ################################# -->
@@ -33,65 +32,58 @@
 
     <!-- Page body -->
     <body>
-        <div class="row" style="padding-top: 2em;">
-            <div class="col">
+        <header>
+            <h2>Homework 2: Part 4 - Math game!</h2>
+            <p>Answer the math problem given below.</p>
+        </header>
+        <div class="row" id="bodyMain">
+            <div class="col" id="leftColumn">
                 <a href="../../../../index.html">Return to Homepage</a><br>
                 <a href="../hw2.html">Return to Assignment 2 Menu</a><br>
             </div>
 
 
             <div class="col-md-6">
-                <!-- Part 1: number count -->
-                <h2>kjhgkjhguoi7t hjguiyl</h2>
+                <!-- Part 4: Guesing game -->
+                
                 <table>
                     <br>
                     <tr>
                         <form id="formInput1" name="formInput1">
-                            <td><label for="num1">Homework Average:</label></td>
-                            <td><input type="number" id="textInput1" size="10"></td>
-                            <td><p class="errorMsg" id="errorArea1"></p></td>
+                            <td><label for="num1"><p id="firstNumber"></p></label>
+                            <label for="num2"><p id="secondNumber"></p></label></td>
                         </form>
                     </tr>
-                    <tr>
-                        <!-- <form id="formInput2" name="formInput2"> -->
-                            <td><label for="num2">Mid-Term Exam Score:</label></td>
-                            <td><input type="number" id="textInput2" size="10"></td>
-                            <td><p class="errorMsg" id="errorArea2"></p></td>
-                        <!-- </form> -->
-                    </tr>
-                    <tr>
-                        <!-- <form id="formInput3" name="formInput3"> -->
-                            <td><label for="num3">Final Exam Score:</label></td>
-                            <td><input type="number" id="textInput3" size="10"></td>
-                            <td><p class="errorMsg" id="errorArea3"></p></td>
-                        <!-- </form> -->
-                    </tr>
-                    <tr>
-                        <!-- <form id="formInput4" name="formInput3"> -->
-                            <td><label for="num4">Participation Score:</label></td>
-                            <td><input type="number" id="textInput4" size="10"></td>
-                            <td><p class="errorMsg" id="errorArea4"></p></td>
-                        <!-- </form> -->
-                    </tr>
-                    <tr class="blank_row"> <td colspan="3"></td></tr>
-                    <tr>
-                        <!-- <form id="formResultArea" name="formResultArea"> -->
-                            <td><label for="num4">Final Grade:</label></td>
-                            <td><input type="text" id="resultLetterGrade" size="10" readonly></td>
-                            <td><input type="text" id="resultNumberGrade" size="10" readonly></td>
-                            <td><p class="errorMsg" id="errorArea4"></p></td>
-                        <!-- </form> -->
-                    </tr>
                 </table>
-                <!-- Where the result goes -->
-                <div id="resultArea">
 
+                <div id="userInputSection">
+                    <table>
+                        <tr>
+                            <td><label for="num3">Enter your answer:</label></td>
+                            <td><input type="number" id="userGuess" size="10"></td>
+                            <td><p class="errorMsg" id="errorArea3"></p></td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr class="blank_row"> <td colspan="3"></td></tr>
+                        <tr>
+                            <td><input type="button"  onclick="guessCheck()" value="SUBMIT ANSWER"></td>
+                        </tr>
+                        <tr class="blank_row"> <td colspan="3"></td></tr>
+                        <tr class="blank_row"> <td colspan="3"></td></tr>
+                    </table>
                 </div>
-                <br>
-                <input type="button"  onclick="process()" value="SUBMIT">
-                <input type="button"  onclick="reset()" value="RESET">
 
-                
+                <p id="resultText"></p>
+                <div id="tryAgainSection" style="display: none;">
+                    <input type="button"  onclick="resetGame()" value="RESTART GAME">
+                    <input type="button"  onclick="endGame()" value="END GAME">
+                </div>
+
+                <div id="thankYouSection" style="display: none;">
+                    <h2>Thank you for playing!</h2>
+                </div>
 
             </div>
 
@@ -103,5 +95,7 @@
         </div>
     </body>
 
+    
+    <script src="part4.js"></script>
 
 </html>
