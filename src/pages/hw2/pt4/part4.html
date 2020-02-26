@@ -46,32 +46,32 @@
             <div class="col-md-6">
                 <!-- Part 4: Guesing game -->
                 
+                <br>
                 <table>
-                    <br>
                     <tr>
-                        <form id="formInput1" name="formInput1">
-                            <td><label for="num1"><p id="firstNumber"></p></label>
-                            <label for="num2"><p id="secondNumber"></p></label></td>
-                        </form>
+                        <td>
+                            <p id="firstNumber"></p>
+                            <!-- <p id="secondNumber"></p> -->
+                        </td>
                     </tr>
                 </table>
 
                 <div id="userInputSection">
                     <table>
                         <tr>
-                            <td><label for="num3">Enter your answer:</label></td>
-                            <td><input type="number" id="userGuess" size="10"></td>
+                            <td><label>Enter your answer:</label></td>
+                            <td><input type="number" id="userGuess"></td>
                             <td><p class="errorMsg" id="errorArea3"></p></td>
                         </tr>
                     </table>
 
                     <table>
-                        <tr class="blank_row"> <td colspan="3"></td></tr>
+                        <!-- <tr class="blank_row"> <td colspan="3"></td></tr> -->
                         <tr>
                             <td><input type="button"  onclick="guessCheck()" value="SUBMIT ANSWER"></td>
                         </tr>
-                        <tr class="blank_row"> <td colspan="3"></td></tr>
-                        <tr class="blank_row"> <td colspan="3"></td></tr>
+                        <!-- <tr class="blank_row"> <td colspan="3"></td></tr> -->
+                        <!-- <tr class="blank_row"> <td colspan="3"></td></tr> -->
                     </table>
                 </div>
 
@@ -93,9 +93,12 @@
             <!-- Nothing here! Exists for layout -->
             </div>
         </div>
+
+
+        <script src="part4.js"></script>
     </body>
 
     
-    <script src="part4.js"></script>
+    
 
 </html>

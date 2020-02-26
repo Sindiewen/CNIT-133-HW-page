@@ -42,8 +42,8 @@ function startmathGame()
     get2NumbersAndTotal(numsAndTotal);
 
     // Print the first 2 values
-    firstNumber.innerHTML = "How much is " + numsAndTotal[0];
-    secondNumber.innerHTML = " Times " + numsAndTotal[1] + "?";
+    firstNumber.innerHTML = "How much is " + numsAndTotal[0] + " Times " + numsAndTotal[1] + "?";
+    // secondNumber.innerHTML = " Times " + numsAndTotal[1] + "?";
 }
 
 /// <Summary>
