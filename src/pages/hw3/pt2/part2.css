@@ -5,8 +5,6 @@ header
     text-align: center;
 }
 
-
-
 #bodyMain
 {
     padding-top: 2rem;
@@ -17,6 +15,24 @@ header
 #leftColumn
 {
 	padding-left: 4em;
+} 
+.errorMsg { color: red; font-style: italic; }
+
+.blank_row
+{
+    height: 10px !important; /* overwrites any other rules */
 }
 
-.errorMsg { color: red; font-style: italic; }
+th
+{
+    background: lightgreen;
+}
+
+.oddRow
+{
+    background: cornflowerblue
+}
+.evenRow
+{
+    background: lightpink
+}

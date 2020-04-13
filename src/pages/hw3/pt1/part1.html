@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+        <!-- ################################# -->
+        <!-- Initializing bootstrap -->
+        <!-- ################################# -->
+
+        <!-- Setting up Jquerey -->
+        <script src="../../../includes/jquery/jquery-3.4.1.min.js"></script>
+        <script src="../../../includes/jquery/validate/jquery.validate.min.js"></script>
+        <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!-- Getting bootstrap framework -->
+        <link rel="stylesheet" href="../../../includes/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+        <script src="../../../includes/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+
+        <!-- Getting stylesheet -->
+        <script src="part1.js"></script>
+        <link rel="stylesheet" href="part1.css">
+
+
+        <!-- ################################# -->
+        <!-- Page Start -->
+        <!-- ################################# -->
+
+        <title>Homework 3: Part 1</title>
+    </head>
+
+    <!-- Page body -->
+    <body onload="runProg()">
+        <header>
+            <h2>Homework 3: Part 1 - Numbers and Loops</h2>
+            <p>Prints numbers in a specific sequence based on the rules in the homework.<br>First loop starts at 5, ends at 21 inclusive, iterates by 4.<br>2nd loop starts at 3, ends at 21 incluside and iterates by 3.<br>Each loop multiplies the previous number with itself and prints the result.</p>
+        </header>
+
+        <div class="row" id="bodyMain">
+            <!-- Navigation menu -->
+            <div class="col" id="leftColumn">
+                <a href="../../../../index.html">Return to Homepage</a><br>
+                <a href="../hw3.html">Return to Assignment 3 Menu</a><br>
+            </div>
+
+
+            <!-- Main program body -->
+            <div class="col-md-6">
+                <div id="draggableBox">
+                    <p>Product and sum: Starting number = 5 | Ending number = 21 Inclusive | Iteration ammount = 5 </p>
+                    <p id="part1ASum"></p>
+                    <p id="part1AProduct"></p>
+                    <p>Product and sum: Starting number = 3 | Ending number = 21 Inclusive | Iteration ammount = 3 </p>
+                    <p id="part1BSum"></p>
+                    <p id="part1BProduct"></p>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+            <!-- Nothing here! Exists for layout consistency -->
+            </div>
+        </div>
+    </body>
+
+
+</html>
