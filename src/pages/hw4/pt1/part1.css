@@ -1,0 +1,22 @@
+header
+{
+    background-color: #e6e6fa;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(230,230,250,1) 75%);
+    text-align: center;
+}
+
+
+
+#bodyMain
+{
+    padding-top: 2rem;
+    background-color: #ffb6c1;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,182,193,0.4) 50%, rgba(255,255,255,1) 100%);
+}
+
+#leftColumn
+{
+	padding-left: 4em;
+}
+        
+.errorMsg { color: red; font-style: italic; }

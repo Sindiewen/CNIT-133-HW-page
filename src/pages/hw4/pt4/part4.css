@@ -1,0 +1,32 @@
+header
+{
+    background-color: #e6e6fa;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(230,230,250,1) 75%);
+    text-align: center;
+}
+
+#bodyMain
+{
+    padding-top: 2rem;
+    background-color: #ffb6c1;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,182,193,0.4) 50%, rgba(255,255,255,1) 100%);
+}
+
+#leftColumn
+{
+	padding-left: 4em;
+}
+        
+.errorMsg { color: red; font-style: italic; }
+
+
+/* nav ul {text-align:center;}
+nav ul li {float:left; display:inline;}
+nav ul li:hover {background:#E6E6E6;}
+nav ul li a {display:block; padding:15px 25px; color:#444; text-decoration:none; }
+nav ul li ul {position:absolute; width:120px; background:#444;}
+nav ul li ul li {width:120px;}
+nav ul li ul li a {display:block; padding:15px 10px; color:#FFF;}
+nav ul li ul li:hover a {background:#D1D1D1; color:#F00;}
+nav ul li ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;} */
