@@ -39,5 +39,5 @@ function searchString()
 
 function loadErrorWindow()
 {
-    window.open("notFount.html", "ErrorWindow", "width=300, height=100");
+    window.open("notfound.html", "ErrorWindow", "width=300, height=100");
 }
