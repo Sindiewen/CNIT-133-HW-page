@@ -19,7 +19,7 @@ function roundToNearestX(floatToRound, place, maxDecimal)
 }
 
 
-function mathRoundInput()
+function mathRound()
 {
     // Reset error
     document.getElementById("roundInputError").innerHTML = "";
@@ -59,9 +59,18 @@ function mathSqrtInput()
 
 }
 
-function mathRoundInput(place, maxDecimal, elementToUseInput, elementToUseOutput)
+function mathRoundInput(place, maxDecimal, elementToUseInput, elementToUseOutput, error)
 {
+    document.getElementById(error).innerHTML = "";
     var floatInput = document.getElementById(elementToUseInput).value;
-    document.getElementById(elementToUseOutput).value = roundToNearestX(floatInput, place, maxDecimal).toString();
+    if (countDecimals(floatInput) >= maxDecimal)
+    {
+        document.getElementById(elementToUseOutput).value = roundToNearestX(floatInput, place, maxDecimal).toString();
+    }
+    else
+    {
+        document.getElementById(error).innerHTML = "Please enter a valid floating point number greater than " + maxDecimal.toString() + " decimal places.";
+    }
+    
 }
 
