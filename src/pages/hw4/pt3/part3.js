@@ -16,7 +16,7 @@ function validatePhone()
 {
     document.getElementById("areaCode").value = ""; 
     document.getElementById("last4").value = "";
-    document.getElementById("errorMsg").innerHTML = "Please enter ";
+    document.getElementById("errorMsg").innerHTML = "";
     var phoneNumber = document.getElementById("phoneNumber").value;
 
 
