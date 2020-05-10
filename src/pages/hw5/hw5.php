@@ -92,7 +92,7 @@ if ($nameRequest !== "")
   {
     if (stristr($nameRequest, substr($name, 0, $len))) 
     {
-      if ($hint === "") 
+      if ($currentNameHint === "") 
       {
         $currentNameHint = $name;
       } 
