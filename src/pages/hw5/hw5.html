@@ -16,6 +16,7 @@
 
         <!-- Getting stylesheet -->
         <link rel="stylesheet" href="hw5.css">
+        <script src="hw5.js"></script>
 
 
         <!-- ################################# -->
@@ -27,15 +28,43 @@
 
     <!-- Page body -->
     <body>
-        <div class="row">
-            <div class="col-sm">
-                <a href="../../../index.html">Return to Homepage</a><br>
+        <header>
+            <h2>Homework 5: </h2>
+            <p>Where all of the assignments for Homework 4 live!</p>
+        </header>
 
+        <div class="row"  id="bodyMain">
+            <div class="col">
+                <a href="../../../index.html">Return to Homepage</a><br>
+            </div>
+
+
+            <div class="col">
+                <p><b>Type a name and see if the name exists wihitn the php file thingy</b></p>
                 <br>
-                <h1>Homework 5</h2>
-                <p>
-                    coming soon!
+                <form>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" onkeyup="showHint(this.value)">
+                </form>
+                <br>
+                <p>suggestions: <span id="txtHint"></span></p>
+                <br>
+                <br>
+                <p id="rest">
+                    Maybe i'm a little baiased as i love rabbits, but on the small amount of research googling and on apilist.fun, I couldn't find any rest api's related to rabbits! Plenty of api's for cats and dogs but none for rabbits! Maybe this might inspire me to create one for rabbits, maybe every time a https status happens the user gets a rabbit on screen. Something i'll think about.
+                    <br>
+                    <br>
+                    But mild jokes aside, I think one of the most interesting api's happen to be Twitter's REST API. It's really not much special, but what you can do with it can be amazing espeically if you're really familiar with python or C++ and know software engineering fundamentals and some AI basics. Like creating a twitter bot that every week summarizes your twitter report on the week, on popular things youve liked, re-tweeted, maybe even listing your top favorited tweets of the week and then summarizing your most popular tweets of the week that had the largest reach. Maybe even if you're wanting to be silly, you could build new twitter account bot that gets your current tweets and compiles random tweets from what you tweeted based on words and pictures and phrases just stiched together so it's nonsensical and silly.
+                    <br>
+                    <br>
+                    We'll start here, <a href="https://developer.twitter.com/en/docs">the TWitter API Docs</a>. From here you can learn how to get started with the api on the "getting started" link. The twitter API requires authentication with OAuth, creating a developer account and the api keys and access tokens. From there when you get your environment setup and you want to get a tweet from an acount, it returns a JSON file for you to play with.
                 </p>
+            </div>
+
+
+
+            <div class="col">
+            <!-- Nothing here! Exists for layout -->
             </div>
         </div>
     </body>
